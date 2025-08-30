@@ -1,0 +1,34 @@
+✨ What is Generative AI?
+
+Definition: AI that can create new content like text, images, music, videos, or code.
+Works by: Learning patterns from data → then generating new, similar outputs.
+
+
+🛠️ Examples of Generative AI
+
+ChatGPT → Generates text, answers, essays.
+
+
+❓ What is a Token?                 check this to learn tokens -> tiktokenizer
+
+A token = small piece of text (word, part of a word, or symbol).
+Example: "I love AI" → Tokens: "I", "love", "AI".
+
+Generative AI = Break text into tokens → Predict next token → Join tokens → Create full answer.
+
+
+GPT => Generative Pretrained Transformer    
+
+📘 LLM = Large Language Model
+
+🔹 1. Large
+Means it is trained on a huge amount of data (books, articles, websites, code, conversations).
+
+🔹 2. Language
+It mainly works with human language → English, Hindi, code, etc.
+It understands and generates text.
+
+🔹 3. Model
+A mathematical program (AI brain) that learns patterns from data and then predicts the next word/token.
+
+

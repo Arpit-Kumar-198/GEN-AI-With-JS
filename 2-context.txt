@@ -1,0 +1,14 @@
+📘 What is Context?
+
+🔹 In AI / LLMs
+
+Context = The information given to AI in the prompt or conversation.
+AI uses this context to decide what answer to give.
+
+👉 Example:
+You say: "Who is the president?" → AI needs context (which country, which year).
+
+🔹 Why Context is Important?
+
+Without context = Wrong or incomplete answers.
+With context = Correct, meaningful answers.
