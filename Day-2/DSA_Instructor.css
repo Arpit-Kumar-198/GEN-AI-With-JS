@@ -158,12 +158,26 @@ body::before {
   padding: 12px 18px;
   border-radius: 25px;
   max-width: 80%;
-  word-wrap: break-word;
+  word-wrap: break-word;     /* ✅ breaks long words */
+  overflow-wrap: break-word; /* ✅ ensures wrapping works in all browsers */
+  white-space: pre-wrap;     /* ✅ preserves formatting but still wraps */
   line-height: 1.6;
   opacity: 0;
   animation: fade-in 0.5s forwards ease-out;
   transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
   cursor: default;
+}
+.message.bot code, 
+.message.bot pre {
+  white-space: pre-wrap;  /* ✅ wrap long code lines */
+  word-break: break-word;
+  display: block;
+  overflow-x: auto;       /* ✅ allow horizontal scroll if needed */
+  background: #f5f5f5;
+  padding: 8px;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 0.9em;
 }
 
 .message:hover {
@@ -222,7 +236,7 @@ body::before {
 
 .chat-input-container {
   display: flex;
-  padding: 15px 20px;
+  padding: 20px 20px;
   border-top: 1px solid var(--border-color);
   background-color: #f9f9f9;
   align-items: center;
@@ -298,7 +312,7 @@ body::before {
   }
   .chat-header {
     font-size: 1.3em;
-    padding: 12px 15px;
+    padding: 15px 15px;
   }
   .dsa-instructor-image {
     width: 35px;
@@ -315,7 +329,7 @@ body::before {
     font-size: 0.95em;
   }
   .chat-input-container {
-    padding: 12px 15px;
+    padding: 15px 15px;
   }
   .chat-input-container input[type="text"] {
     padding: 10px 15px;
@@ -334,7 +348,7 @@ body::before {
   }
   .chat-header {
     font-size: 1.1em;
-    padding: 10px;
+    padding: 12px;
   }
   .dsa-instructor-image {
     width: 30px;
@@ -351,7 +365,7 @@ body::before {
   }
   .chat-input-container {
     flex-direction: column;
-    padding: 10px;
+    padding: 12px;
   }
   .chat-input-container input[type="text"] {
     margin-right: 0;
